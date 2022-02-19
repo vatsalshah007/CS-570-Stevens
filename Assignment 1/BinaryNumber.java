@@ -41,6 +41,9 @@ public class BinaryNumber {
 	}
 	
 	public int getDigit(int index) {
+		if(index < 0) {
+			throw new IllegalArgumentException("Cannot have index less than 0");
+		}
 		if(index > getLength()) {
 			throw new IllegalArgumentException("Index out of Bounds");
 		}
