@@ -1,12 +1,14 @@
+// Vatsal Shah
 
 public class Complexity {
-	private static int count = 0;
+	private static int count;
 	
 	public static void method1(int n) {
 		if(n < 0) {
 			throw new IllegalArgumentException("Cannot have n less than 0");
 		}
-		int count = 0;
+		
+		count = 0;
 		for (int i = 0; i < n; i++) {
 			for(int j = 0; j < n; j++) {
 				count++;
@@ -19,7 +21,8 @@ public class Complexity {
 		if(n < 0) {
 			throw new IllegalArgumentException("Cannot have n less than 0");
 		}
-		int count = 0;
+
+		count = 0;
 		for (int i = 0; i < n; i++) {
 			for(int j = 0; j < n; j++) {
 				for(int k = 0; k < n; k++) {
@@ -34,7 +37,8 @@ public class Complexity {
 		if(n < 0) {
 			throw new IllegalArgumentException("Cannot have n less than 0");
 		}
-		int count = 0;
+
+		count = 0;
 		int i = 1;
 		while (i < n) {
 			count++;
@@ -47,7 +51,8 @@ public class Complexity {
 		if(n < 0) {
 			throw new IllegalArgumentException("Cannot have n less than 0");
 		}
-		int count = 0;
+
+		count = 0;
 		for(int j = 0; j < n ; j++) {
 			int i = 1;
 			while (i < n) {
@@ -63,7 +68,8 @@ public class Complexity {
 		if(n < 0) {
 			throw new IllegalArgumentException("Cannot have n less than 0");
 		}
-		int count = 0;
+
+		count = 0;
 		int i = n;
 		while(i > 2) {
 			count++;
@@ -77,6 +83,8 @@ public class Complexity {
 		if(n < 0) {
 			throw new IllegalArgumentException("Cannot have n less than 0");
 		}
+
+		count = 0;
 		count++;
 		if(n <= 1) return n;
 		return method6(n-1) + method6(n-2);
